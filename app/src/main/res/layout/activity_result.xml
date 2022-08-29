@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@color/white">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="370dp"
+        android:layout_height="470dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="4dp"
+        app:strokeColor="@color/white"
+
+        app:strokeWidth="2dp">
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/print_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="260dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Votre objet"
+        android:textColor="@color/grey"
+        android:textSize="25dp" />
+
+
+    <ScrollView
+        android:id="@+id/details"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+
+            <TextView
+
+                android:id="@+id/confidence"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="#535353"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="489dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/blue_dark"
+            android:text="verifier"
+            android:textColor="@color/orange"
+            android:textColorLink="@color/blue_dark" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="170dp"
+            android:backgroundTint="@color/white"
+            android:text="retour"
+            android:textColor="@color/blue_dark" />
+    </RelativeLayout>
+</RelativeLayout>

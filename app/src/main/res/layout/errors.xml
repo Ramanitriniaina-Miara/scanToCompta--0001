@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erreur"
+        android:padding="16dp"
+        android:background="@color/light_red"
+        android:textColor="@color/blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/blue_dark"
+        android:text="Vérifiez s'il s'agit bien d'un reçu"
+        android:textSize="14dp"
+        android:gravity="center"
+        />
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ok"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="ok"
+            android:backgroundTint="#DDD9CC"
+            android:textColor="@color/blue_dark"
+            android:textSize="18dp"
+            android:layout_marginTop="-30dp"
+
+            />
+
+</LinearLayout>
